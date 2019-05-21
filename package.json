@@ -1,0 +1,36 @@
+{
+  "name": "ezeechat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "server": "nodemon index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.5.0",
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.2.1",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-redis-subscriptions": "^2.1.0",
+    "graphql-subscriptions": "^1.1.0",
+    "http": "0.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.0",
+    "nodemon": "^1.18.11",
+    "socket.io": "^2.2.0",
+    "subscriptions-transport-ws": "^0.9.16",
+    "validator": "^10.11.0"
+  }
+}
